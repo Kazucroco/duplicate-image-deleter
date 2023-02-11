@@ -13,7 +13,7 @@ for file in os.listdir(directory):
     # Skips the instruction file.
     if(file == "place_image_files_here.txt"):
         continue
-    
+
     # Ensures the program doesn't crash when trying to open an invalid file.
     try:
         # Opens an image and stores the bytes in current_image
@@ -32,5 +32,3 @@ for file in os.listdir(directory):
 
     # Adds the current image to the bank if no identical images were found.
     image_bank.append(current_image)
-
-
